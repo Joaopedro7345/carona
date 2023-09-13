@@ -8,8 +8,16 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'cadastro-site',
     pathMatch: 'full'
+  },
+  {
+    path: 'cadastro-site',
+    loadChildren: () => import('./cadastro-site/cadastro-site.module').then( m => m.CadastroSitePageModule)
+  },
+  {
+    path: 'login-site',
+    loadChildren: () => import('./login-site/login-site.module').then( m => m.LoginSitePageModule)
   },
 ];
 
