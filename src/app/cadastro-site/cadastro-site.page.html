@@ -1,0 +1,83 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Credencial</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div style="display:flex;justify-content:center;margin-top: 2rem;">
+    <ion-img
+      src="\assets\carrorooo (1).png" alt="logo" id="logo">
+    </ion-img>
+  </div>
+  <br>
+  <br>
+
+  <div id="content">
+    <ion-input 
+      type="name"
+      fill="clear"
+      label="Nome" 
+      labelPlacement="floating" 
+      errorText="Nome inválido como seu usuário"
+      placeholder="Digite o nome"
+      ngModel
+      name
+    ></ion-input>
+
+    <ion-input 
+      type="date"
+      fill="clear"
+      label="Data de nascimento" 
+      labelPlacement="floating" 
+      errorText="Este nome será valido como seu usuário"
+      ngModel
+      date
+    ></ion-input>
+
+    <ion-input 
+      type="Email"
+      fill="clear"
+      label="Email"
+      labelPlacement="floating"
+      errorText="Formato de email inválido"
+      placeholder="Digite o email"
+      ngModel
+      email
+    ></ion-input>
+
+    <ion-input 
+  
+      label="Celular" 
+      type="number" 
+      placeholder="(ddd) 000-000-000"
+      errorText="Formato de número inválido"
+      counter="true"
+      maxlength="12"
+      ngModel
+      phone
+    ></ion-input>
+
+    <ion-input
+      type="password"
+      id="custom-input"
+      label="Senha"
+      labelPlacement="floating"
+      placeholder="Digite a senha"
+      [counter]="true"
+      maxlength="20"
+      [counterFormatter]="customCounterFormatter"
+      ngModel
+      password
+    ></ion-input><br>
+    <ion-checkbox>Aceitar os <a href="/termos-site">termos de uso</a></ion-checkbox>
+  </div>
+  
+
+  <ion-button id="conta" fill="clear" expand="block" color="tertiary" (click)="login()">Já tenho conta</ion-button>
+  <ion-button id="cadastro" expand="block" color="tertiary" (click)="entrar()">Cadastrar</ion-button>
+  
+</ion-content>
+

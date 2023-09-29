@@ -1,0 +1,48 @@
+<ion-content [fullscreen]="true">
+
+  <div style="display:flex;justify-content:center;margin-top: 8rem;">
+    <ion-img
+      src="\assets\carrorooo (1).png" alt="logo" id="logo">
+    </ion-img>
+  </div>
+
+  <div id="content">
+
+    <ion-input 
+      type="email"
+      fill="clear"
+      label="Email"
+      labelPlacement="floating"
+      errorText="Formato de email inválido"
+      placeholder="Digite o email"
+      ngModel
+      email
+    ></ion-input>
+
+    <ion-input
+      type="password"
+      id="custom-input"
+      label="Senha"
+      labelPlacement="floating"
+      placeholder="Digite a senha"
+      [counter]="true"
+      maxlength="20"
+      [counterFormatter]="customCounterFormatter"
+
+    ></ion-input>
+    
+  </div>
+  
+  <ion-button id="conta" fill="clear" expand="block" color="tertiary" (click)="cadastro()">Voltar</ion-button>
+  <ion-button id="cadastro" expand="block" color="tertiary" (click)="entrar()">Entrar</ion-button>
+</ion-content>
+
+<ion-toast
+  trigger="open-stacked-toast"
+  [duration]="9000"
+  [buttons]="toastButtons"
+  message="Este é um site para apresentação, entretando saiba que tanto a Faculdade Senac Criciúma, quanto os programadores terão acesso a suas informações."
+  layout="stacked"
+></ion-toast>
+
+

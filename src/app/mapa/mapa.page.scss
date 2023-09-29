@@ -1,0 +1,15 @@
+.ion-text-center{
+    margin-top: 2rem;
+}
+#map{
+    border: 1px solid #5260ff;  
+    border-radius: 20px;
+    box-shadow: #5260ff 0.1em 0.1em 2em; 
+    transition: 0.6s;
+}
+#map:hover{
+    border: 1px solid #5260ff;  
+    border-radius: 20px;
+    box-shadow: #b0b6ff 0.1em 0.1em 1em; 
+    transition: 0.6s;
+}

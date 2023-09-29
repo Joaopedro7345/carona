@@ -1,0 +1,40 @@
+<ion-app>
+  
+  
+  <ion-content [fullscreen]="true">    
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>
+  
+
+  <ion-footer [translucent]="true">
+    <ion-toolbar>
+      <ion-segment value="home" color="tertiary">
+        <ion-segment-button (click)="navVerificar()" value="motorista">
+          <ion-label style="font-size: 0.5rem;">Sou<br>motorista</ion-label>
+          <ion-icon name="car-outline"></ion-icon>
+  
+        </ion-segment-button>
+  
+        <ion-segment-button (click)="navMapa()" value="mapa">
+          <ion-label>Mapa</ion-label>
+          <ion-icon name="location-outline"></ion-icon>
+        </ion-segment-button>
+  
+        <ion-segment-button value="home">
+          <ion-label>Home</ion-label>
+          <ion-icon name="home-outline"></ion-icon>
+        </ion-segment-button>
+  
+        <ion-segment-button value="msg">
+          <ion-label>Mensagens</ion-label>
+          <ion-icon name="chatbubbles-outline"></ion-icon>
+        </ion-segment-button>
+  
+        <ion-segment-button (click)="navPerfil()" value="user">
+          <ion-label>Perfil</ion-label>
+          <ion-icon name="person"></ion-icon>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </ion-footer>  
+</ion-app>

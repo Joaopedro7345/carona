@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Verificação do motorista</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="content">
+    <ion-label id="labelVeri">Digite a senha para confirmar se você é motorista da Caronna</ion-label>
+    <ion-input [(ngModel)]="senhaVerifica" type="password" id="custom-input" label="Senha" labelPlacement="floating"
+      placeholder="Digite a senha" [counter]="true" maxlength="20"></ion-input><br>
+  </div>
+
+  <ion-button class="verificar" expand="block" color="tertiary" (click)="motorista()"
+    id="open-loading">Verificar</ion-button>
+
+  <ion-loading trigger="open-loading" spinner="null" message="Aguarde uns instantes" duration="3000">
+
+
+
+  </ion-loading>
+</ion-content>

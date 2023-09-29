@@ -1,0 +1,42 @@
+#partida {
+    width: 50%;
+    float: left;
+}
+
+#destino {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#label2 {
+    text-align: end;
+    text-justify: inter-word;
+}
+
+
+.name {
+    margin-top: 0.5rem;
+    text-align: start;
+    text-justify: inter-word;
+}
+
+.valor {
+    width: 50%;
+    margin-top: 0.5rem;
+    text-align: end;
+    text-justify: inter-word;
+    color: #5260ff;
+}
+
+#map {
+    border-radius: 20px;
+}
+.pagamento{
+    
+    text-align: center;
+}
+.copiar{
+    float: right;
+    margin: -1.9%; /* Isso alinhará o título à direita, empurrando-o para o lado direito */
+}

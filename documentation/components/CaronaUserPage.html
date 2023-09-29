@@ -1,0 +1,432 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>carona documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">carona documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  CaronaUserPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/carona-user/carona-user.page.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Dados de interligações do carona-user.</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-carona-user</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./carona-user.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./carona-user.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+
+/**
+ * Dados de interligações do carona-user.
+ */
+@Component({
+  selector: &#x27;app-carona-user&#x27;,
+  templateUrl: &#x27;./carona-user.page.html&#x27;,
+  styleUrls: [&#x27;./carona-user.page.scss&#x27;],
+})
+
+/**
+ * Classe para o Carona-User, a página que detalha sobre a viagem do motorista, e a compra.
+ */
+export class CaronaUserPage implements OnInit {
+
+  /**
+   * @ignore
+   */
+  constructor() { }
+
+  /**
+ * @ignore
+ */
+  ngOnInit() {
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;link href&#x3D;&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css&quot; rel&#x3D;&quot;stylesheet&quot; integrity&#x3D;&quot;sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN&quot; crossorigin&#x3D;&quot;anonymous&quot;&gt;
+&lt;script src&#x3D;&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js&quot; integrity&#x3D;&quot;sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL&quot; crossorigin&#x3D;&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;ion-header [translucent]&#x3D;&quot;true&quot;&gt;
+  &lt;ion-toolbar&gt;
+    &lt;ion-buttons slot&#x3D;&quot;start&quot;&gt;
+      &lt;ion-back-button defaultHref&#x3D;&quot;/&quot;&gt;&lt;/ion-back-button&gt;
+    &lt;/ion-buttons&gt;
+    &lt;ion-title&gt;Informações da carona&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content [fullscreen]&#x3D;&quot;true&quot;&gt;
+  &lt;ion-item  class&#x3D;&quot;botao&quot; fill&#x3D;&quot;outline-tertiary&quot;  &gt;
+
+  &lt;ion-icon slot&#x3D;&quot;start&quot; color&#x3D;&quot;tertiary&quot; name&#x3D;&quot;person&quot;&gt;&lt;/ion-icon&gt;
+  &lt;ion-grid&gt;
+    &lt;ion-row&gt;
+      &lt;ion-col size&#x3D;&quot;6&quot; class&#x3D;&quot;name&quot;&gt;João Miguel&lt;/ion-col&gt;
+      &lt;ion-col size&#x3D;&quot;6&quot; class&#x3D;&quot;valor&quot;&gt;&lt;b&gt;R$ 55,00&lt;/b&gt;&lt;/ion-col&gt;
+    &lt;/ion-row&gt;
+
+    &lt;ion-row&gt;
+      &lt;ion-col&gt;&lt;ion-icon name&#x3D;&quot;star-outline&quot;&gt;&lt;/ion-icon&gt;&lt;/ion-col&gt;
+      &lt;ion-col&gt;&lt;ion-icon name&#x3D;&quot;star-outline&quot;&gt;&lt;/ion-icon&gt;&lt;/ion-col&gt;
+      &lt;ion-col&gt;&lt;ion-icon name&#x3D;&quot;star-outline&quot;&gt;&lt;/ion-icon&gt;&lt;/ion-col&gt;
+      &lt;ion-col&gt;&lt;ion-icon name&#x3D;&quot;star-outline&quot;&gt;&lt;/ion-icon&gt;&lt;/ion-col&gt;
+      &lt;ion-col&gt;&lt;ion-icon name&#x3D;&quot;star-outline&quot;&gt;&lt;/ion-icon&gt;&lt;/ion-col&gt;
+      &lt;ion-col size&#x3D;&quot;7&quot;&gt;&lt;/ion-col&gt;
+    &lt;/ion-row&gt;
+    &lt;br&gt;
+
+    &lt;div id&#x3D;&quot;partida&quot;&gt;
+      &lt;ion-label&gt;
+        Partida:
+        17:50 &lt;ion-icon name&#x3D;&quot;alarm-outline&quot; color&#x3D;&quot;tertiary&quot; class&#x3D;&quot;relogio&quot;&gt;&lt;/ion-icon&gt;&lt;br&gt;
+        &lt;p&gt;Porto Alegre&lt;/p&gt;
+      &lt;/ion-label&gt;
+    &lt;/div&gt;
+    
+    &lt;div id&#x3D;&quot;destino&quot;&gt;
+      
+      &lt;ion-label id&#x3D;&quot;label2&quot;&gt;
+        &lt;ion-icon name&#x3D;&quot;alarm-outline&quot; color&#x3D;&quot;tertiary&quot; class&#x3D;&quot;relogio&quot;&gt;&lt;/ion-icon&gt;
+         Destino: 20:00&lt;br&gt;
+        &lt;p&gt;Criciúma&lt;/p&gt;
+      &lt;/ion-label&gt;
+    &lt;/div&gt;
+
+  &lt;/ion-grid&gt;
+  &lt;/ion-item&gt;
+  &lt;div class&#x3D;&quot;ion-text-center&quot;&gt;&lt;br&gt;
+
+    &lt;div&gt;
+      &lt;iframe src&#x3D;&quot;https://www.google.com/maps/embed?pb&#x3D;!1m76!1m12!1m3!1d3669879.6552020195!2d-50.77325322250095!3d-26.22457510955742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x94ce8af96f722a25%3A0x8071626c51a7154a!2sAeroporto%20Internacional%20de%20Guarulhos%20(GRU)!3m2!1d-23.426234299999997!2d-46.480007699999994!4m5!1s0x94ce5ee7acdd50f5%3A0x3eeaf24eff368507!2zVGF0dWFww6ksIFPDo28gUGF1bG8gLSBTUA!3m2!1d-23.5352452!2d-46.575463!4m5!1s0x94ceff1b30a13e85%3A0xa270ce364d5d6efa!2sRodovi%C3%A1ria%20de%20Osasco!3m2!1d-23.525588799999998!2d-46.7741203!4m5!1s0x94c5347e2c0e09a5%3A0x49d364185749890!2sSenac%20Registro!3m2!1d-24.4997692!2d-47.8397797!4m5!1s0x94dce45abc8fcacd%3A0xe97d288f3a0b65bc!2zRXN0YcOnw6NvIFJvZG92acOhcmlhIGRlIEN1cml0aWJh!3m2!1d-25.4367672!2d-49.2573253!4m5!1s0x94deb05d17ddef9b%3A0xf4bab91e45567c7!2sRodovi%C3%A1ria%20Joinville!3m2!1d-26.315575499999998!2d-48.8580568!4m5!1s0x952739822cdb22b3%3A0xec7a45661537149d!2sTerminal%20rodovi%C3%A1rio%20de%20Florian%C3%B3polis!3m2!1d-27.5973662!2d-48.557213999999995!4m5!1s0x952182511f1126bb%3A0x82c846d13e64f9cc!2sRodovi%C3%A1ria%20de%20Crici%C3%BAma!3m2!1d-28.68037!2d-49.37451!4m5!1s0x95226909eb880c91%3A0xaede5ce1449cee3d!2zRXN0YcOnw6NvIHJvZG92acOhcmlhIGRlIFRvcnJlcw!3m2!1d-29.3408038!2d-49.7329903!4m5!1s0x951979a0d3324c41%3A0xf6a7ff2cb70889c4!2sEsta%C3%A7%C3%A3o%20Rodovi%C3%A1ria%20de%20Porto%20Alegre!3m2!1d-30.022937199999998!2d-51.2192642!5e0!3m2!1spt-BR!2sbr!4v1695393474305!5m2!1spt-BR!2sbr&quot; 
+        width&#x3D;&quot;70%&quot; 
+        height&#x3D;&quot;300&quot; 
+        id&#x3D;&quot;map&quot; 
+        allowfullscreen&#x3D;&quot;&quot; 
+        loading&#x3D;&quot;lazy&quot; 
+        referrerpolicy&#x3D;&quot;no-referrer-when-downgrade&quot;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;br&gt;
+
+  &lt;ion-accordion-group&gt;
+    &lt;ion-accordion value&#x3D;&quot;first&quot;&gt;
+      &lt;ion-item slot&#x3D;&quot;header&quot; color&#x3D;&quot;light&quot; class&#x3D;&quot;pagamento&quot;&gt;
+        &lt;ion-label&gt;Formas de pagamento&lt;/ion-label&gt;
+      &lt;/ion-item&gt;
+      &lt;div class&#x3D;&quot;ion-padding&quot; slot&#x3D;&quot;content&quot;&gt;
+        &lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; width&#x3D;&quot;16&quot; height&#x3D;&quot;16&quot; fill&#x3D;&quot;currentColor&quot; class&#x3D;&quot;bi bi-x-diamond-fill&quot; viewBox&#x3D;&quot;0 0 16 16&quot; &gt;
+          &lt;path d&#x3D;&quot;M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z&quot;/&gt;
+        &lt;/svg&gt;
+        Pix 
+        &lt;ion-button class&#x3D;&quot;copiar&quot; color&#x3D;&quot;tertiary&quot; fill&#x3D;&quot;outline&quot; &gt;
+          &lt;ion-label color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot;&gt;Copiar chave&lt;/ion-label&gt;
+          
+          &lt;ion-icon color&#x3D;&quot;tertiary&quot;  name&#x3D;&quot;copy-outline&quot; &gt;&lt;/ion-icon&gt;
+        &lt;/ion-button&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;ion-padding&quot; slot&#x3D;&quot;content&quot;&gt;
+          &lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; width&#x3D;&quot;16&quot; height&#x3D;&quot;16&quot; fill&#x3D;&quot;currentColor&quot; class&#x3D;&quot;bi bi-cash-coin&quot; viewBox&#x3D;&quot;0 0 16 16&quot;&gt;
+            &lt;path fill-rule&#x3D;&quot;evenodd&quot; d&#x3D;&quot;M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z&quot;/&gt;
+            &lt;path d&#x3D;&quot;M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z&quot;/&gt;
+            &lt;path d&#x3D;&quot;M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z&quot;/&gt;
+            &lt;path d&#x3D;&quot;M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z&quot;/&gt;
+          &lt;/svg&gt;
+          Dinheiro&lt;/div&gt;
+    &lt;/ion-accordion&gt;
+  &lt;/ion-accordion-group&gt;
+&lt;/ion-content&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./carona-user.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">#partida {
+    width: 50%;
+    float: left;
+}
+
+#destino {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#label2 {
+    text-align: end;
+    text-justify: inter-word;
+}
+
+
+.name {
+    margin-top: 0.5rem;
+    text-align: start;
+    text-justify: inter-word;
+}
+
+.valor {
+    width: 50%;
+    margin-top: 0.5rem;
+    text-align: end;
+    text-justify: inter-word;
+    color: #5260ff;
+}
+
+#map {
+    border-radius: 20px;
+}
+.pagamento{
+    
+    text-align: center;
+}
+.copiar{
+    float: right;
+    margin: -1.9%; /* Isso alinhará o título à direita, empurrando-o para o lado direito */
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><ion-header [translucent]="true">  <ion-toolbar>    <ion-buttons slot="start">      <ion-back-button defaultHref="/"></ion-back-button>    </ion-buttons>    <ion-title>Informações da carona</ion-title>  </ion-toolbar></ion-header><ion-content [fullscreen]="true">  <ion-item  class="botao" fill="outline-tertiary"  >  <ion-icon slot="start" color="tertiary" name="person"></ion-icon>  <ion-grid>    <ion-row>      <ion-col size="6" class="name">João Miguel</ion-col>      <ion-col size="6" class="valor"><b>R$ 55,00</b></ion-col>    </ion-row>    <ion-row>      <ion-col><ion-icon name="star-outline"></ion-icon></ion-col>      <ion-col><ion-icon name="star-outline"></ion-icon></ion-col>      <ion-col><ion-icon name="star-outline"></ion-icon></ion-col>      <ion-col><ion-icon name="star-outline"></ion-icon></ion-col>      <ion-col><ion-icon name="star-outline"></ion-icon></ion-col>      <ion-col size="7"></ion-col>    </ion-row>    <br>    <div id="partida">      <ion-label>        Partida:        17:50 <ion-icon name="alarm-outline" color="tertiary" class="relogio"></ion-icon><br>        <p>Porto Alegre</p>      </ion-label>    </div>        <div id="destino">            <ion-label id="label2">        <ion-icon name="alarm-outline" color="tertiary" class="relogio"></ion-icon>         Destino: 20:00<br>        <p>Criciúma</p>      </ion-label>    </div>  </ion-grid>  </ion-item>  <div class="ion-text-center"><br>    <div>      <iframe src="https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d3669879.6552020195!2d-50.77325322250095!3d-26.22457510955742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x94ce8af96f722a25%3A0x8071626c51a7154a!2sAeroporto%20Internacional%20de%20Guarulhos%20(GRU)!3m2!1d-23.426234299999997!2d-46.480007699999994!4m5!1s0x94ce5ee7acdd50f5%3A0x3eeaf24eff368507!2zVGF0dWFww6ksIFPDo28gUGF1bG8gLSBTUA!3m2!1d-23.5352452!2d-46.575463!4m5!1s0x94ceff1b30a13e85%3A0xa270ce364d5d6efa!2sRodovi%C3%A1ria%20de%20Osasco!3m2!1d-23.525588799999998!2d-46.7741203!4m5!1s0x94c5347e2c0e09a5%3A0x49d364185749890!2sSenac%20Registro!3m2!1d-24.4997692!2d-47.8397797!4m5!1s0x94dce45abc8fcacd%3A0xe97d288f3a0b65bc!2zRXN0YcOnw6NvIFJvZG92acOhcmlhIGRlIEN1cml0aWJh!3m2!1d-25.4367672!2d-49.2573253!4m5!1s0x94deb05d17ddef9b%3A0xf4bab91e45567c7!2sRodovi%C3%A1ria%20Joinville!3m2!1d-26.315575499999998!2d-48.8580568!4m5!1s0x952739822cdb22b3%3A0xec7a45661537149d!2sTerminal%20rodovi%C3%A1rio%20de%20Florian%C3%B3polis!3m2!1d-27.5973662!2d-48.557213999999995!4m5!1s0x952182511f1126bb%3A0x82c846d13e64f9cc!2sRodovi%C3%A1ria%20de%20Crici%C3%BAma!3m2!1d-28.68037!2d-49.37451!4m5!1s0x95226909eb880c91%3A0xaede5ce1449cee3d!2zRXN0YcOnw6NvIHJvZG92acOhcmlhIGRlIFRvcnJlcw!3m2!1d-29.3408038!2d-49.7329903!4m5!1s0x951979a0d3324c41%3A0xf6a7ff2cb70889c4!2sEsta%C3%A7%C3%A3o%20Rodovi%C3%A1ria%20de%20Porto%20Alegre!3m2!1d-30.022937199999998!2d-51.2192642!5e0!3m2!1spt-BR!2sbr!4v1695393474305!5m2!1spt-BR!2sbr"         width="70%"         height="300"         id="map"         allowfullscreen=""         loading="lazy"         referrerpolicy="no-referrer-when-downgrade"      ></iframe>    </div>  </div><br>  <ion-accordion-group>    <ion-accordion value="first">      <ion-item slot="header" color="light" class="pagamento">        <ion-label>Formas de pagamento</ion-label>      </ion-item>      <div class="ion-padding" slot="content">        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-diamond-fill" viewBox="0 0 16 16" >          <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z"/>        </svg>        Pix         <ion-button class="copiar" color="tertiary" fill="outline" >          <ion-label color="dark" slot="start">Copiar chave</ion-label>                    <ion-icon color="tertiary"  name="copy-outline" ></ion-icon>        </ion-button>        </div>        <div class="ion-padding" slot="content">          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">            <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>            <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>            <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>          </svg>          Dinheiro</div>    </ion-accordion>  </ion-accordion-group></ion-content></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastroSitePage', 'selector': 'app-cadastro-site'},{'name': 'CaronaUserPage', 'selector': 'app-carona-user'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'LoginSitePage', 'selector': 'app-login-site'},{'name': 'MapaPage', 'selector': 'app-mapa'},{'name': 'MensagemPage', 'selector': 'app-mensagem'},{'name': 'MenuPage', 'selector': 'app-menu'},{'name': 'MotoristaPage', 'selector': 'app-motorista'},{'name': 'PerfilPage', 'selector': 'app-perfil'},{'name': 'VerificarPage', 'selector': 'app-verificar'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CaronaUserPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CaronaUserPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

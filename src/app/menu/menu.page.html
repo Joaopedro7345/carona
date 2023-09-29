@@ -1,0 +1,30 @@
+<ion-toolbar>
+  <ion-segment value="home" color="tertiary">
+
+    <ion-segment-button (click)="navMotorista()"  value="motorista">
+      <ion-label style="font-size: 0.5rem;">Sou<br>motorista</ion-label>
+      <ion-icon name="car-outline" ></ion-icon>
+    </ion-segment-button>
+
+    <ion-segment-button (click)="navMapa()" value="mapa">
+      <ion-label>Mapa</ion-label>
+      <ion-icon name="location-outline"></ion-icon>
+    </ion-segment-button>
+
+    <ion-segment-button (click)="navHome()"  value="home">
+      <ion-label>Home</ion-label>
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-segment-button>
+
+    <ion-segment-button (click)="navMsg()"  value="msg">
+      <ion-label>Mensagens</ion-label>
+      <ion-icon name="chatbubbles-outline"></ion-icon>
+    </ion-segment-button>
+
+    <ion-segment-button (click)="navPerfil()"  value="user">
+      <ion-label>Perfil</ion-label>
+      <ion-icon name="person"></ion-icon>
+    </ion-segment-button>
+
+  </ion-segment>
+</ion-toolbar>
