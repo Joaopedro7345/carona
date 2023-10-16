@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
+import { ToastController } from '@ionic/angular';
 
 /**
  * Dados de interligações do carona-user.
@@ -14,10 +16,14 @@ import { Component, OnInit } from '@angular/core';
  */
 export class CaronaUserPage implements OnInit {
 
+  public checkBox:boolean = false;
   /**
    * @ignore
    */
-  constructor() { }
+  constructor(
+    public router:Router,
+    private toastController: ToastController
+  ) { }
 
   /**
  * @ignore
@@ -25,4 +31,12 @@ export class CaronaUserPage implements OnInit {
   ngOnInit() {
   }
 
+  comprar(){
+    if(this.checkBox == true){
+      this.router.navigateByUrl('/home/');
+      alert("Compra finalizada!")
+    } else {
+      alert("Informe a forma de pagamento!")
+    }
+  }
 }

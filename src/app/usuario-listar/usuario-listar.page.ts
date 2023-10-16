@@ -22,7 +22,6 @@ export class UsuarioListarPage implements OnInit {
    */
   public usuarios:Array<any> = [];
 
-  
   /** 
   * Puxa dados de outro local. 
   */
@@ -55,19 +54,7 @@ export class UsuarioListarPage implements OnInit {
     this.listar();
   }
 
-  /**
-   * Método Botão de confirmar exclusão
-   */
-  async presentAlert() {
-    const alert = await this.alertController.create({
-      header: 'Alert',
-      subHeader: 'Important message',
-      message: 'This is an alert!',
-      buttons: ['OK'],
-    });
 
-    await alert.present();
-  }
 
   /**
    * Método listar gera a lista de usuários.
@@ -82,6 +69,8 @@ export class UsuarioListarPage implements OnInit {
       }    
     );
   }
+  
+
   
   /**
    * Método excluir deleta um usuário do banco de dados.

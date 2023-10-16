@@ -15,7 +15,6 @@ import { RequisicaoService } from './service/requisicao.service';
  * @ignore
  */
 export class AppComponent {
-  public rotaativa:string = '';
   public exibir_menu:boolean = false;
 
   
