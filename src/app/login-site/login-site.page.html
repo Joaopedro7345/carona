@@ -15,8 +15,7 @@
       labelPlacement="floating"
       errorText="Formato de email inválido"
       placeholder="Digite o email"
-      ngModel
-      email
+      [(ngModel)]="email"
     ></ion-input>
 
     <ion-input
@@ -28,7 +27,7 @@
       [counter]="true"
       maxlength="20"
       [counterFormatter]="customCounterFormatter"
-
+      [(ngModel)]="senha"
     ></ion-input>
     
   </div>

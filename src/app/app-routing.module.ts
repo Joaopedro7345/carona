@@ -32,10 +32,6 @@ const routes: Routes = [
     loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
   },
   {
-    path: 'menu',
-    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
-  },
-  {
     path: 'mensagem',
     loadChildren: () => import('./mensagem/mensagem.module').then( m => m.MensagemPageModule)
   },
@@ -46,6 +42,10 @@ const routes: Routes = [
   {
     path: 'verificar',
     loadChildren: () => import('./verificar/verificar.module').then( m => m.VerificarPageModule)
+  },
+  {
+    path: 'usuario-listar',
+    loadChildren: () => import('./usuario-listar/usuario-listar.module').then( m => m.UsuarioListarPageModule)
   }
 ];
 

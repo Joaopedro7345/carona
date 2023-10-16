@@ -19,6 +19,17 @@ export class HomePage {
   * Puxa dados de outro local. 
   */
   constructor(
+
+    /**
+     * Variável nativa do Angular, que cumpre o papel de navegar entre páginas.
+     */
+    public router:Router
   ) {}
 
+  /**
+   * Método que redireciona um botão ao carona-user.
+   */
+  navCarona(){
+    this.router.navigateByUrl('/carona-user');
+  }
 }

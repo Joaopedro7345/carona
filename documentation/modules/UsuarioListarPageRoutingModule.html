@@ -35,7 +35,7 @@
 
 <ol class="breadcrumb">
     <li class="breadcrumb-item">Modules</li>
-    <li class="breadcrumb-item" >AppRoutingModule</li>
+    <li class="breadcrumb-item" >UsuarioListarPageRoutingModule</li>
 </ol>
 
 
@@ -61,7 +61,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/app-routing.module.ts</code>
+            <code>src/app/usuario-listar/usuario-listar-routing.module.ts</code>
         </p>
 
 
@@ -79,63 +79,22 @@
 
     <div class="tab-pane fade  tab-source-code" id="source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
-import { PreloadAllModules, RouterModule, Routes } from &#x27;@angular/router&#x27;;
+import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
+
+import { UsuarioListarPage } from &#x27;./usuario-listar.page&#x27;;
 
 const routes: Routes &#x3D; [
   {
-    path: &#x27;home&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./home/home.module&#x27;).then( m &#x3D;&gt; m.HomePageModule)&quot;
-  },
-  {
     path: &#x27;&#x27;,
-    redirectTo: &#x27;cadastro-site&#x27;,
-    pathMatch: &#x27;full&#x27;
-  },
-  {
-    path: &#x27;cadastro-site&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./cadastro-site/cadastro-site.module&#x27;).then( m &#x3D;&gt; m.CadastroSitePageModule)&quot;
-  },
-  {
-    path: &#x27;login-site&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./login-site/login-site.module&#x27;).then( m &#x3D;&gt; m.LoginSitePageModule)&quot;
-  },
-  {
-    path: &#x27;carona-user&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./carona-user/carona-user.module&#x27;).then( m &#x3D;&gt; m.CaronaUserPageModule)&quot;
-  },
-  {
-    path: &#x27;perfil&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./perfil/perfil.module&#x27;).then( m &#x3D;&gt; m.PerfilPageModule)&quot;
-  },
-  {
-    path: &#x27;mapa&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./mapa/mapa.module&#x27;).then( m &#x3D;&gt; m.MapaPageModule)&quot;
-  },
-  {
-    path: &#x27;mensagem&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./mensagem/mensagem.module&#x27;).then( m &#x3D;&gt; m.MensagemPageModule)&quot;
-  },
-  {
-    path: &#x27;motorista&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./motorista/motorista.module&#x27;).then( m &#x3D;&gt; m.MotoristaPageModule)&quot;
-  },
-  {
-    path: &#x27;verificar&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./verificar/verificar.module&#x27;).then( m &#x3D;&gt; m.VerificarPageModule)&quot;
-  },
-  {
-    path: &#x27;usuario-listar&#x27;,
-    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./usuario-listar/usuario-listar.module&#x27;).then( m &#x3D;&gt; m.UsuarioListarPageModule)&quot;
+    component: UsuarioListarPage
   }
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-  ],
-  exports: [RouterModule]
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class UsuarioListarPageRoutingModule {}
 </code></pre>
     </div>
 </div>
@@ -182,7 +141,7 @@ export class AppRoutingModule { }
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
-            var COMPODOC_CURRENT_PAGE_URL = 'AppRoutingModule.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'UsuarioListarPageRoutingModule.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

@@ -200,8 +200,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="33"
-                            class="link-to-prism">src/app/service/requisicao.service.ts:33</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">src/app/service/requisicao.service.ts:31</a></div>
                 </td>
             </tr>
 
@@ -220,6 +220,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -234,6 +235,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>Dados como nome, email, celular, data e senha são armazenados nesse parametro.</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -271,8 +276,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="46"
-                            class="link-to-prism">src/app/service/requisicao.service.ts:46</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/service/requisicao.service.ts:40</a></div>
                 </td>
             </tr>
 
@@ -348,10 +353,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/service/requisicao.service.ts:25</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/service/requisicao.service.ts:24</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variável nativa do Angular.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -378,7 +389,6 @@ export class RequisicaoService {
 
   /**
   * Recebe dados de outra página
-  * @param http 
   */
   constructor(
 
@@ -390,21 +400,16 @@ export class RequisicaoService {
 
   /**
    * Recebe paramentros para adicionar na variável dados.
-   * @param dados 
-   * @returns 
+   * @param dados Dados como nome, email, celular, data e senha são armazenados nesse parametro.
    */
   get(dados: any) {
     return this.http.get(&#x27;/requisicao&#x27;, {
-      params: {
-        _dados: dados
-      }
+      params: dados
     });
   }
 
   /**
    * Requisição para puxar o banco de dados.
-   * @param formData 
-   * @returns 
    */
   post(formData: any) {
     const httpOptions &#x3D; {

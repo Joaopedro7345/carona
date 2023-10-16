@@ -5,7 +5,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-title>Informações da carona</ion-title>
+    <ion-title>Informações da Carona</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -51,9 +51,9 @@
   <div class="ion-text-center"><br>
 
     <div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d3669879.6552020195!2d-50.77325322250095!3d-26.22457510955742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x94ce8af96f722a25%3A0x8071626c51a7154a!2sAeroporto%20Internacional%20de%20Guarulhos%20(GRU)!3m2!1d-23.426234299999997!2d-46.480007699999994!4m5!1s0x94ce5ee7acdd50f5%3A0x3eeaf24eff368507!2zVGF0dWFww6ksIFPDo28gUGF1bG8gLSBTUA!3m2!1d-23.5352452!2d-46.575463!4m5!1s0x94ceff1b30a13e85%3A0xa270ce364d5d6efa!2sRodovi%C3%A1ria%20de%20Osasco!3m2!1d-23.525588799999998!2d-46.7741203!4m5!1s0x94c5347e2c0e09a5%3A0x49d364185749890!2sSenac%20Registro!3m2!1d-24.4997692!2d-47.8397797!4m5!1s0x94dce45abc8fcacd%3A0xe97d288f3a0b65bc!2zRXN0YcOnw6NvIFJvZG92acOhcmlhIGRlIEN1cml0aWJh!3m2!1d-25.4367672!2d-49.2573253!4m5!1s0x94deb05d17ddef9b%3A0xf4bab91e45567c7!2sRodovi%C3%A1ria%20Joinville!3m2!1d-26.315575499999998!2d-48.8580568!4m5!1s0x952739822cdb22b3%3A0xec7a45661537149d!2sTerminal%20rodovi%C3%A1rio%20de%20Florian%C3%B3polis!3m2!1d-27.5973662!2d-48.557213999999995!4m5!1s0x952182511f1126bb%3A0x82c846d13e64f9cc!2sRodovi%C3%A1ria%20de%20Crici%C3%BAma!3m2!1d-28.68037!2d-49.37451!4m5!1s0x95226909eb880c91%3A0xaede5ce1449cee3d!2zRXN0YcOnw6NvIHJvZG92acOhcmlhIGRlIFRvcnJlcw!3m2!1d-29.3408038!2d-49.7329903!4m5!1s0x951979a0d3324c41%3A0xf6a7ff2cb70889c4!2sEsta%C3%A7%C3%A3o%20Rodovi%C3%A1ria%20de%20Porto%20Alegre!3m2!1d-30.022937199999998!2d-51.2192642!5e0!3m2!1spt-BR!2sbr!4v1695393474305!5m2!1spt-BR!2sbr" 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1262461.094552614!2d-50.9870322260779!3d-29.063382536064324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x952182511f1126bb%3A0x82c846d13e64f9cc!2sRodovi%C3%A1ria%20de%20Crici%C3%BAma%20-%20Rua%20Gon%C3%A7alves%20L%C3%AAdo%20-%20Centro%2C%20Crici%C3%BAma%20-%20SC!3m2!1d-28.68037!2d-49.37451!4m5!1s0x951979a0d3324c41%3A0xf6a7ff2cb70889c4!2sEsta%C3%A7%C3%A3o%20Rodovi%C3%A1ria%20de%20Porto%20Alegre%20-%20Largo%20Vespasiano%20J%C3%BAlio%20Veppo%2C%2070%20-%20Centro%20Hist%C3%B3rico%2C%20Porto%20Alegre%20-%20RS%2C%2090035-040!3m2!1d-30.022937199999998!2d-51.2192642!5e0!3m2!1spt-BR!2sbr!4v1696250329311!5m2!1spt-BR!2sbr" 
         width="70%" 
-        height="300" 
+        height="240" 
         id="map" 
         allowfullscreen="" 
         loading="lazy" 
@@ -69,24 +69,22 @@
         <ion-label>Formas de pagamento</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-diamond-fill" viewBox="0 0 16 16" >
-          <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z"/>
-        </svg>
+        <svg id="pix" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 372.6 391.5 392.6 391.5H407.7L310.6 488.6C280.3 518.1 231.1 518.1 200.8 488.6L103.3 391.2H112.6C132.6 391.2 151.5 383.4 165.7 369.2L242.4 292.5zM262.5 218.9C256.1 224.4 247.9 224.5 242.4 218.9L165.7 142.2C151.5 127.1 132.6 120.2 112.6 120.2H103.3L200.7 22.76C231.1-7.586 280.3-7.586 310.6 22.76L407.8 119.9H392.6C372.6 119.9 353.7 127.7 339.5 141.9L262.5 218.9zM112.6 142.7C126.4 142.7 139.1 148.3 149.7 158.1L226.4 234.8C233.6 241.1 243 245.6 252.5 245.6C261.9 245.6 271.3 241.1 278.5 234.8L355.5 157.8C365.3 148.1 378.8 142.5 392.6 142.5H430.3L488.6 200.8C518.9 231.1 518.9 280.3 488.6 310.6L430.3 368.9H392.6C378.8 368.9 365.3 363.3 355.5 353.5L278.5 276.5C264.6 262.6 240.3 262.6 226.4 276.6L149.7 353.2C139.1 363 126.4 368.6 112.6 368.6H80.78L22.76 310.6C-7.586 280.3-7.586 231.1 22.76 200.8L80.78 142.7H112.6z"/>
+        </svg>        
         Pix 
-        <ion-button class="copiar" color="tertiary" fill="outline" >
-          <ion-label color="dark" slot="start">Copiar chave</ion-label>
-          
-          <ion-icon color="tertiary"  name="copy-outline" ></ion-icon>
-        </ion-button>
         </div>
         <div class="ion-padding" slot="content">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+          <svg id="money" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
             <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
             <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
             <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
           </svg>
-          Dinheiro</div>
+          Dinheiro
+        </div>
     </ion-accordion>
+    <p class="container"><br>
+      Todos os pagamentos são visados pelo Banco Seguro.
+    </p>
   </ion-accordion-group>
 </ion-content>

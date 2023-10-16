@@ -15,7 +15,6 @@ export class RequisicaoService {
 
   /**
   * Recebe dados de outra página
-  * @param http 
   */
   constructor(
 
@@ -27,21 +26,16 @@ export class RequisicaoService {
 
   /**
    * Recebe paramentros para adicionar na variável dados.
-   * @param dados 
-   * @returns 
+   * @param dados Dados como nome, email, celular, data e senha são armazenados nesse parametro.
    */
   get(dados: any) {
     return this.http.get('/requisicao', {
-      params: {
-        _dados: dados
-      }
+      params: dados
     });
   }
 
   /**
    * Requisição para puxar o banco de dados.
-   * @param formData 
-   * @returns 
    */
   post(formData: any) {
     const httpOptions = {

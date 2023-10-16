@@ -6,12 +6,12 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxMaskModule } from 'ngx-mask';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule, FormsModule, IonicModule.forRoot({}), HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, IonicModule.forRoot({}), ReactiveFormsModule, NgxMaskModule.forRoot(), HttpClientModule],
   declarations: [AppComponent],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent]

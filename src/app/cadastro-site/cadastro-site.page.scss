@@ -4,9 +4,9 @@
     font-family: 'Arial Narrow Bold'; 
 }
 #content{
-    padding-top: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-top: 0%; 
+    padding-left: 20%; 
+    padding-right: 20%; 
 }
 ion-checkbox {
     --size: 1.5rem;
@@ -32,3 +32,10 @@ ion-checkbox::part(container) {
     padding-left: 35%;
     padding-right: 35%;
 }
+.input{
+    display: block;
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 10px;
+  }

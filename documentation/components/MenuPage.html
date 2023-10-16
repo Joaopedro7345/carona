@@ -204,6 +204,8 @@
 
                 <tr>
                     <td class="col-md-4">
+                            <div class="io-description"><p>Puxa dados de outro local.</p>
+</div>
                             <div>
                                     <b>Parameters :</b>
                                     <table class="params">
@@ -265,8 +267,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="21"
-                            class="link-to-prism">src/app/menu/menu.page.ts:21</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/menu/menu.page.ts:27</a></div>
                 </td>
             </tr>
 
@@ -302,8 +304,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="24"
-                            class="link-to-prism">src/app/menu/menu.page.ts:24</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="30"
+                            class="link-to-prism">src/app/menu/menu.page.ts:30</a></div>
                 </td>
             </tr>
 
@@ -339,8 +341,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="30"
-                            class="link-to-prism">src/app/menu/menu.page.ts:30</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/menu/menu.page.ts:36</a></div>
                 </td>
             </tr>
 
@@ -376,8 +378,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="27"
-                            class="link-to-prism">src/app/menu/menu.page.ts:27</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/menu/menu.page.ts:33</a></div>
                 </td>
             </tr>
 
@@ -413,8 +415,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="18"
-                            class="link-to-prism">src/app/menu/menu.page.ts:18</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/menu/menu.page.ts:24</a></div>
                 </td>
             </tr>
 
@@ -450,8 +452,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="16"
-                            class="link-to-prism">src/app/menu/menu.page.ts:16</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/menu/menu.page.ts:22</a></div>
                 </td>
             </tr>
 
@@ -493,10 +495,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/menu/menu.page.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/menu/menu.page.ts:19</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Este é uma variável nativa do TS, é a base para navegação entre páginas.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -515,9 +523,15 @@ import { Router } from &#x27;@angular/router&#x27;;
   styleUrls: [&#x27;./menu.page.scss&#x27;],
 })
 export class MenuPage implements OnInit {
-
  
+  /** 
+  * Puxa dados de outro local. 
+  */
   constructor(
+
+    /**
+     * Este é uma variável nativa do TS, é a base para navegação entre páginas.
+     */
     public router:Router
   ) {}
 
@@ -611,7 +625,7 @@ export class MenuPage implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><ion-toolbar>  <ion-segment value="home" color="tertiary">    <ion-segment-button (click)="navMotorista()"  value="motorista">      <ion-label style="font-size: 0.5rem;">Sou<br>motorista</ion-label>      <ion-icon name="car-outline" ></ion-icon>    </ion-segment-button>    <ion-segment-button (click)="navMapa()" value="mapa">      <ion-label>Mapa</ion-label>      <ion-icon name="location-outline"></ion-icon>    </ion-segment-button>    <ion-segment-button (click)="navHome()"  value="home">      <ion-label>Home</ion-label>      <ion-icon name="home-outline"></ion-icon>    </ion-segment-button>    <ion-segment-button (click)="navMsg()"  value="msg">      <ion-label>Mensagens</ion-label>      <ion-icon name="chatbubbles-outline"></ion-icon>    </ion-segment-button>    <ion-segment-button (click)="navPerfil()"  value="user">      <ion-label>Perfil</ion-label>      <ion-icon name="person"></ion-icon>    </ion-segment-button>  </ion-segment></ion-toolbar></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastroSitePage', 'selector': 'app-cadastro-site'},{'name': 'CaronaUserPage', 'selector': 'app-carona-user'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'LoginSitePage', 'selector': 'app-login-site'},{'name': 'MapaPage', 'selector': 'app-mapa'},{'name': 'MensagemPage', 'selector': 'app-mensagem'},{'name': 'MenuPage', 'selector': 'app-menu'},{'name': 'MotoristaPage', 'selector': 'app-motorista'},{'name': 'PerfilPage', 'selector': 'app-perfil'},{'name': 'VerificarPage', 'selector': 'app-verificar'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastroSitePage', 'selector': 'app-cadastro-site'},{'name': 'CaronaUserPage', 'selector': 'app-carona-user'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'LoginSitePage', 'selector': 'app-login-site'},{'name': 'MapaPage', 'selector': 'app-mapa'},{'name': 'MensagemPage', 'selector': 'app-mensagem'},{'name': 'MenuPage', 'selector': 'app-menu'},{'name': 'MotoristaPage', 'selector': 'app-motorista'},{'name': 'PerfilPage', 'selector': 'app-perfil'},{'name': 'UsuarioListarPage', 'selector': 'app-usuario-listar'},{'name': 'VerificarPage', 'selector': 'app-verificar'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'MenuPage'};
 </script>

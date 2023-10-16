@@ -14,6 +14,9 @@ import { Router } from '@angular/router';
  * Classe para o Login-site, ele contém as variáveis, métodos e funções do site.
  */
 export class LoginSitePage implements OnInit {
+  
+  public email:string = '';
+  public senha:string = '';
 
   /**
    * animador nos inputs de cadastro

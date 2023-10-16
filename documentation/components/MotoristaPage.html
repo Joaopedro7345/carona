@@ -73,6 +73,13 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Dados de interligações do motoristaPage.</p>
+
+    </p>
 
 
     <p class="comment">
@@ -158,9 +165,6 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#ngOnInit" >ngOnInit</a>
-                            </li>
-                            <li>
                                 <a href="#voltar" >voltar</a>
                             </li>
                         </ul>
@@ -186,12 +190,14 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/motorista/motorista.page.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/motorista/motorista.page.ts:16</a></div>
                             </td>
                         </tr>
 
                 <tr>
                     <td class="col-md-4">
+                            <div class="io-description"><p>Contém dados de outros lugares.</p>
+</div>
                             <div>
                                     <b>Parameters :</b>
                                     <table class="params">
@@ -237,43 +243,6 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="ngOnInit"></a>
-                    <span class="name">
-                        <span ><b>ngOnInit</b></span>
-                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>ngOnInit()</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="15"
-                            class="link-to-prism">src/app/motorista/motorista.page.ts:15</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
                     <a name="voltar"></a>
                     <span class="name">
                         <span ><b>voltar</b></span>
@@ -290,14 +259,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="17"
-                            class="link-to-prism">src/app/motorista/motorista.page.ts:17</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/motorista/motorista.page.ts:38</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Método Voltar retorna a página anterior, no caso home-page.</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -333,10 +304,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/motorista/motorista.page.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/motorista/motorista.page.ts:26</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variável nativa do Angular que tem função de ligar páginas.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -349,19 +326,40 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { Router } from &#x27;@angular/router&#x27;;
 
+/**
+ * Dados de interligações do motoristaPage.
+ */
 @Component({
   selector: &#x27;app-motorista&#x27;,
   templateUrl: &#x27;./motorista.page.html&#x27;,
   styleUrls: [&#x27;./motorista.page.scss&#x27;],
 })
+
+/**
+ * Classe MotoristaPage contém dados TypeScript.
+ */
 export class MotoristaPage implements OnInit {
 
+  /**
+   * Contém dados de outros lugares.
+   */
   constructor(
+
+    /**
+     * Variável nativa do Angular que tem função de ligar páginas.
+     */
     public router:Router
   ) { }
 
+  /**
+   * @ignore
+   */
   ngOnInit() {
   }
+
+  /**
+   * Método Voltar retorna a página anterior, no caso home-page.
+   */
   voltar(){
     this.router.navigateByUrl(&#x27;/home&#x27;);
   }
@@ -477,7 +475,7 @@ export class MotoristaPage implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><ion-header [translucent]="true">  <ion-toolbar>    <ion-title class="ion-title-custom">motorista</ion-title>    <ion-buttons slot="end">      <ion-button id="voltar" fill="clear" color="tertiary" (click)="voltar()">Voltar</ion-button>    </ion-buttons>  </ion-toolbar></ion-header><ion-content [fullscreen]="true">  <ion-grid>    <ion-row>      <ion-col size="2">        <ion-avatar id="neymidia">          <img alt="Silhouette of a person\'s head" src="https://istoe.com.br/wp-content/uploads/2023/08/neymar-jr-scaled.jpg" />        </ion-avatar>      </ion-col>      <ion-col >        <ion-title style="padding-top: 1.5rem;" >João Pedro</ion-title>      </ion-col>      <ion-col size="3">        <img width="90px" src="\assets\carrorooo (1).png"/>      </ion-col>    </ion-row>  </ion-grid>    <ion-label>      <h2 class="label">Descrição</h2>      <p class="label">dvfshdvbjhsbvdcfjsfdcuhgusehdfiusbcdbhuysdghfb,u</p>    </ion-label>    <br>    <ion-label>      <h2 class="label">Número de telefone</h2>      <p class="label">+55 48 9 9932-3451</p>    </ion-label>    <br>    <ion-label>      <h2 class="label">Idade</h2>      <p class="label">22 anos</p>    </ion-label>    <br>    <ion-label>      <h2 class="label">Carro</h2>      <p class="label">Tiguan</p>    </ion-label>    <br>    <ion-label>      <h2 class="label">Placa</h2>      <p class="label">EJF3G48</p>    </ion-label>    <br>    <ion-label>      <h2 class="label">Cor do carro</h2>      <p class="label">Branco</p>    </ion-label></ion-content></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastroSitePage', 'selector': 'app-cadastro-site'},{'name': 'CaronaUserPage', 'selector': 'app-carona-user'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'LoginSitePage', 'selector': 'app-login-site'},{'name': 'MapaPage', 'selector': 'app-mapa'},{'name': 'MensagemPage', 'selector': 'app-mensagem'},{'name': 'MenuPage', 'selector': 'app-menu'},{'name': 'MotoristaPage', 'selector': 'app-motorista'},{'name': 'PerfilPage', 'selector': 'app-perfil'},{'name': 'VerificarPage', 'selector': 'app-verificar'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastroSitePage', 'selector': 'app-cadastro-site'},{'name': 'CaronaUserPage', 'selector': 'app-carona-user'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'LoginSitePage', 'selector': 'app-login-site'},{'name': 'MapaPage', 'selector': 'app-mapa'},{'name': 'MensagemPage', 'selector': 'app-mensagem'},{'name': 'MotoristaPage', 'selector': 'app-motorista'},{'name': 'PerfilPage', 'selector': 'app-perfil'},{'name': 'UsuarioListarPage', 'selector': 'app-usuario-listar'},{'name': 'VerificarPage', 'selector': 'app-verificar'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'MotoristaPage'};
 </script>

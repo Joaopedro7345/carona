@@ -32,11 +32,24 @@
 #map {
     border-radius: 20px;
 }
-.pagamento{
-    
+
+.pagamento {
+
     text-align: center;
 }
-.copiar{
+
+.copiar {
     float: right;
-    margin: -1.9%; /* Isso alinhará o título à direita, empurrando-o para o lado direito */
+    margin: -1.9%;
+    /* Isso alinhará o título à direita, empurrando-o para o lado direito */
+}
+
+#pix {
+    fill: #2dc7d2
+}
+#money {
+    fill: #46f781
+}
+.container{
+    font-family: 'Times New Roman';
 }

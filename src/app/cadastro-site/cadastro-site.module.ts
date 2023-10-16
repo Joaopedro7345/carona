@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { CadastroSitePageRoutingModule } from './cadastro-site-routing.module';
-
 import { CadastroSitePage } from './cadastro-site.page';
 
 @NgModule({
@@ -13,7 +12,7 @@ import { CadastroSitePage } from './cadastro-site.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    CadastroSitePageRoutingModule,
+    CadastroSitePageRoutingModule
   ],
   declarations: [CadastroSitePage],
 })
