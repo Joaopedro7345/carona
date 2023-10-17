@@ -45,7 +45,7 @@ export class AppComponent {
     switch(path){
       case 'cadastro-site':
       case '':
-      case 'cadastro-site/':
+      case 'cadastro-site/:id':
         this.exibir_menu = false;
       break;
       default:
