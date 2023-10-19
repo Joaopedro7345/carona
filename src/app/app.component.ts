@@ -46,6 +46,7 @@ export class AppComponent {
       case 'cadastro-site':
       case '':
       case 'cadastro-site/:id':
+      case 'autenticacao':
         this.exibir_menu = false;
       break;
       default:
@@ -72,7 +73,7 @@ export class AppComponent {
    * Método de link que navega pelo menu para o home-page.
    */
   navHome(){
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/inicio');
   } 
 
   /**

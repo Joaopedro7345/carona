@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>autenticacao</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="logo-container">
+    <img
+      src="\asset\carrorooo (1).png"
+      alt="logo"
+      class="logo"
+      />
+  </div>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Login</ion-label>
+      <ion-input type="text" [(ngModel)]="login"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="logar()">Entrar</ion-button>
+
+  <ion-alert
+    [isOpen]="is_open_error_alert"
+    header="Ops!"
+    message="Login e/ou Senha não conferem."
+    [buttons]="['fechar']"
+  ></ion-alert>
+
+</ion-content>

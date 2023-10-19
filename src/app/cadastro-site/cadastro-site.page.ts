@@ -152,7 +152,7 @@ export class CadastroSitePage implements OnInit {
               await loading.dismiss();
             }
           );
-        this.router.navigateByUrl('/home');
+        this.router.navigateByUrl('/inicio');
     }
  // }
 

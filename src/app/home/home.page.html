@@ -1,52 +1,55 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Caronas
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
 
-<ion-content>
-  <div>
-    <!-- (click)="navCarona()" -->
-    <ion-item class="botao" fill="outline-tertiary" (click)="navCarona()" router-direction="forward" button detail lines="full" button>
-      <ion-icon slot="start" color="tertiary" name="person"></ion-icon>
-      <ion-grid>
-        <ion-row>
-          <ion-col size="6" class="name">João Miguel</ion-col>
-          <ion-col size="6" class="valor"><b>R$ 55,00</b></ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col><ion-icon name="star-outline"></ion-icon></ion-col>
-          <ion-col><ion-icon name="star-outline"></ion-icon></ion-col>
-          <ion-col><ion-icon name="star-outline"></ion-icon></ion-col>
-          <ion-col><ion-icon name="star-outline"></ion-icon></ion-col>
-          <ion-col><ion-icon name="star-outline"></ion-icon></ion-col>
-          <ion-col size="7"></ion-col>
-        </ion-row>
-        <br>
-
-        <div id="partida">
-          <ion-label>
-            Partida:
-            17:50 <ion-icon name="alarm-outline" color="tertiary" class="relogio"></ion-icon><br>
-            <p>Porto Alegre</p>
-          </ion-label>
-        </div>
-        
-        <div id="destino">
-          
-          <ion-label id="label2">
-            <ion-icon name="alarm-outline" color="tertiary" class="relogio"></ion-icon>
-             Destino: 20:00<br>
-            <p>Criciúma</p>
-          </ion-label>
-        </div>
-
-      </ion-grid>
-    </ion-item>
-  </div><br>
+  <div style="display:flex;justify-content:center;margin-top: 8rem;">
+    <ion-img
+      src="\assets\carrorooo (1).png" alt="logo" id="logo">
+    </ion-img>
+  </div>
   
+
+  <ion-alert
+    [isOpen]="is_open_error_alert"
+    header="Ops!"
+    message="Login e/ou Senha não conferem."
+    [buttons]="['fechar']"
+  ></ion-alert>
+
+  <div id="content">
+
+    <ion-input 
+      type="email"
+      fill="clear"
+      label="Email"
+      labelPlacement="floating"
+      errorText="Formato de email inválido"
+      placeholder="Digite o email"
+      [(ngModel)]="email"
+    ></ion-input>
+
+    <ion-input
+      type="password"
+      id="custom-input"
+      label="Senha"
+      labelPlacement="floating"
+      placeholder="Digite a senha"
+      [counter]="true"
+      maxlength="20"
+      [counterFormatter]="customCounterFormatter"
+      [(ngModel)]="senha"
+    ></ion-input>
+    
+  </div>
+  
+  <ion-button id="conta" fill="clear" expand="block" color="tertiary" (click)="cadastro()">Voltar</ion-button>
+  <ion-button id="cadastro" expand="block" color="tertiary" (click)="logar()">Entrar</ion-button>
 </ion-content>
+
+<ion-toast
+  trigger="open-stacked-toast"
+  [duration]="9000"
+  [buttons]="toastButtons"
+  message="Este é um site para apresentação, entretando saiba que tanto a Faculdade Senac Criciúma, quanto os programadores terão acesso a suas informações."
+  layout="stacked"
+></ion-toast>
+
 
