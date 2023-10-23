@@ -32,7 +32,8 @@ export class AutenticacaoPage implements OnInit {
           if (_res.status == 'success') {
             sessionStorage.setItem('user_id', _res.user_id);
             sessionStorage.setItem('user_name', _res.user_name);
-            sessionStorage.setItem('token', _res.token);
+            sessionStorage.setItem('user_email', _res.user_email);
+            sessionStorage.setItem('token', _res.token);            
             this.router.navigateByUrl('/inicio');
           } else {
             this.is_open_error_alert = true;

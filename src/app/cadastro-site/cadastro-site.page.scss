@@ -1,50 +1,58 @@
-#cadastro{
+#cadastro {
     margin-top: 1rem;
     margin-inline: 30%;
-    font-family: 'Arial Narrow Bold'; 
+    font-family: 'Arial Narrow Bold';
 }
-#content{
-    padding-top: 0%; 
-    padding-left: 20%; 
-    padding-right: 20%; 
+
+#content {
+    padding-top: 0%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
+
 ion-checkbox {
     --size: 1.5rem;
     --checkbox-background-checked: #5260ff;
 }
-  
+
 ion-checkbox::part(container) {
     border-radius: 6px;
     border: 2px solid #5260ff;
 }
-#open-stacked-toast{
+
+#open-stacked-toast {
     margin-top: 5%;
     margin-bottom: 3%;
-    font-family: 'Lucida Sans Unicode'; 
+    font-family: 'Lucida Sans Unicode';
 }
-#conta{
+
+#conta {
     margin-top: 5rem;
     margin-inline: 30%;
-    font-family: 'Arial Narrow Bold'; 
+    font-family: 'Arial Narrow Bold';
 }
-#logo{
+
+#logo {
     padding-top: 3%;
     padding-left: 35%;
     padding-right: 35%;
 }
-.input{
+
+.input {
     display: block;
     height: 22px;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 4px 10px;
-  }
-  #open-toast{
+}
+
+#open-toast {
     width: 40%;
     margin-bottom: 0.79rem;
-  }
-  #sac{
+}
+
+#sac {
     margin-right: 4rem;
     float: right;
     margin-top: 0.3rem;
-  }
+}

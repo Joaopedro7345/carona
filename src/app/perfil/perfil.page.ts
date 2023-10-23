@@ -17,7 +17,7 @@ import { RequisicaoService } from '../service/requisicao.service';
 export class PerfilPage implements OnInit {
 
   public usuarios:Array<any> = [];
-
+  public user_name:string = '';
 
   /**
    * @ignore
@@ -36,22 +36,7 @@ export class PerfilPage implements OnInit {
    * @ignore
    */
   ngOnInit() {
-
-    /**
-     * Recarrega os dados do listar() para atualizar a lista de usuários.
-     */
-    this.perfil();
-  }
-
-  perfil(){
-    this.requisicao_service.get({
-      controller: 'perfil'
-    })
-    .subscribe(
-      (_res:any) => {
-        this.usuarios = _res;
-      }    
-    );
+    this.user_name = String(sessionStorage.getItem('user_name'));
   }
 }
 

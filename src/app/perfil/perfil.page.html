@@ -13,17 +13,41 @@
             <img alt="Imagem do usuário" src="../assets/perfil.jpg" />
           </ion-avatar>
         </ion-col>
-        <ion-col *ngFor="let usuario of usuarios">
-          <ion-title style="padding-top: 1.5rem;">{{usuario.nome}}</ion-title>
+        <ion-col>
+          <ion-title style="padding-top: 1rem;">{{user_name}} <ion-button  size="default" fill="clear" class="editar"><ion-icon slot="start" color="warning" name="create-outline"></ion-icon></ion-button></ion-title>
+          
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col size="2"></ion-col>
         <ion-col>
-          avaliação do usuário
         </ion-col>
       </ion-row>
     </ion-grid>
   </div>
-
+  <ion-label>
+    <h2 class="label">Descrição</h2>
+    <p class="label"><ion-textarea
+      aria-label="Custom textarea"
+      placeholder="O que você gostaria que as pessoas soubessem sobre você?"
+      class="custom"
+      [counter]="true"
+      [maxlength]="280"
+    ></ion-textarea></p>
+  </ion-label>
+  <ion-label>
+    <h2 class="label">Idade</h2>
+    <p class="label">18 anos</p>
+  </ion-label>
+  <br>
+  <ion-label>
+    <h2 class="label">Gênero</h2>
+    <p class="label"><ion-radio-group [allowEmptySelection]="true" class="sexo" value="Homem" >
+      <ion-radio value="Homem" color="tertiary">Homem</ion-radio><br />
+      <ion-radio value="Mulher" color="tertiary">Mulher</ion-radio><br />
+      <ion-radio value="Outros" color="tertiary">outros</ion-radio><br />
+    </ion-radio-group>
+  </p>
+  </ion-label><br>
+  <ion-button id="salvar" expand="block" color="tertiary">Salvar</ion-button>
 </ion-content>
