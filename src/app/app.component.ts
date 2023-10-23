@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RequisicaoService } from './service/requisicao.service';
+import { Location } from '@angular/common';
 
 /**
  * Dados de interligações do component, não são importantes para o site, porém não podem ser excluídos.
@@ -14,23 +15,19 @@ import { RequisicaoService } from './service/requisicao.service';
 /**
  * @ignore
  */
-export class AppComponent {
+export class AppComponent{
   public exibir_menu:boolean = false;
 
   
-  handleRefresh(event:any) {
-    setTimeout(() => {
-      // Any calls to load data go here
-      event.target.complete();
-    }, 2000);
-  }
   
+  
+
   /**
    * @ignore
    */
   constructor(
 
-    
+
     /**
      * Este é uma variável nativa do TS, é a base para navegação entre páginas.
      */
@@ -46,7 +43,9 @@ export class AppComponent {
       case 'cadastro-site':
       case '':
       case 'cadastro-site/:id':
-      case 'autenticacao':
+      case 'login-site':
+      case 'autenticacao': 
+      case 'home':
         this.exibir_menu = false;
       break;
       default:
@@ -54,7 +53,13 @@ export class AppComponent {
     }
   }
 
-
+  handleRefresh(event:any) {
+      setTimeout(() => {
+        // Any calls to load data go here
+        event.target.complete();
+      }, 2000);
+      location.reload()
+    }
   /**
    * Método de link que navega pelo menu para o carona-user.
    */
@@ -95,5 +100,7 @@ export class AppComponent {
    */
   navVerificar(){
     this.router.navigateByUrl('/verificar');
-  }      
+  }    
+  
+  
 }

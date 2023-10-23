@@ -9,7 +9,7 @@ import { AutenticacaoService } from './autenticacao.service';
 })
 export class AutenticacaoPage implements OnInit {
 
-  public login: string = '';
+  public email: string = '';
   public senha: string = '';
   public is_open_error_alert: boolean = false;
 
@@ -20,25 +20,33 @@ export class AutenticacaoPage implements OnInit {
 
   ngOnInit() {
   }
+  
   logar() {
-    let login = this.login;
+    let email = this.email;
     let senha = this.senha;
 
     this.autenticacao_service
-      .logar(login, senha)
+      .logar(email, senha)
       .subscribe(
         async (_res: any) => {
           if (_res.status == 'success') {
             sessionStorage.setItem('user_id', _res.user_id);
             sessionStorage.setItem('user_name', _res.user_name);
             sessionStorage.setItem('token', _res.token);
-            this.router.navigateByUrl('/listar-site');
+            this.router.navigateByUrl('/inicio');
           } else {
             this.is_open_error_alert = true;
+            alert('Erro ao logar!');
           }
         }
       );
   }
 
+  /**
+   * Método que transporta ele para o cadastro-site no aplicativo.
+   */
+  cadastro(){
+    this.router.navigateByUrl('/cadastro-site');
+  }
 
 }

@@ -57,7 +57,7 @@ export class LoginSitePage implements OnInit {
    * Método validador do usuário para ele logar no aplicativo.
    */
   entrar(){
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/inicio');
   }
 
   /**

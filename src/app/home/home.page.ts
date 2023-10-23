@@ -79,6 +79,13 @@ export class HomePage{
       );
   }
 
+   /**
+   * Método validador do usuário para ele logar no aplicativo.
+   */
+   entrar(){
+    this.router.navigateByUrl('/inicio');
+  }
+
   /**
    * Método que transporta ele para o cadastro-site no aplicativo.
    */

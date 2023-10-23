@@ -1,31 +1,39 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>autenticacao</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
 
-  <div class="logo-container">
-    <img
-      src="\asset\carrorooo (1).png"
-      alt="logo"
-      class="logo"
-      />
+  <div style="display:flex;justify-content:center;margin-top: 8rem;">
+    <ion-img
+      src="\assets\carrorooo (1).png" alt="logo" id="logo">
+    </ion-img>
   </div>
   
-  <ion-list>
-    <ion-item>
-      <ion-label position="floating">Login</ion-label>
-      <ion-input type="text" [(ngModel)]="login"></ion-input>
-    </ion-item>
+  <div id="content">
 
-    <ion-item>
-      <ion-label position="floating">senha</ion-label>
-      <ion-input type="password" [(ngModel)]="senha"></ion-input>
-    </ion-item>
-  </ion-list>
-  <ion-button expand="full" (click)="logar()">Entrar</ion-button>
+    <ion-input 
+      type="email"
+      fill="clear"
+      label="Email"
+      labelPlacement="floating"
+      errorText="Formato de email inválido"
+      placeholder="Digite o email"
+      [(ngModel)]="email"
+    ></ion-input>
+
+    <ion-input
+      type="password"
+      id="custom-input"
+      label="Senha"
+      labelPlacement="floating"
+      placeholder="Digite a senha"
+      [counter]="true"
+      maxlength="20"
+      [(ngModel)]="senha"
+    ></ion-input>
+    
+  </div>
+ 
+  
+  <ion-button id="conta" fill="clear" expand="block" color="tertiary" (click)="cadastro()">Voltar</ion-button>
+  <ion-button id="cadastro" expand="block" color="tertiary" (click)="logar()">Entrar</ion-button>
 
   <ion-alert
     [isOpen]="is_open_error_alert"

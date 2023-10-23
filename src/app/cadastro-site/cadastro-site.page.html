@@ -6,75 +6,41 @@
   </ion-header>
 
   <div style="display:flex;justify-content:center;margin-top: 2rem;">
-    <ion-img
-      src="\assets\carrorooo (1).png" alt="logo" id="logo">
+    <ion-img src="\assets\carrorooo (1).png" alt="logo" id="logo">
     </ion-img>
   </div>
   <br>
   <br>
 
   <div id="content">
-    <ion-input 
-      type="text"
-      fill="clear"
-      label="Nome" 
-      labelPlacement="floating" 
-      errorText="Nome inválido como seu usuário"
-      placeholder="Digite o nome"
-      [(ngModel)]="nome"
-      #required
-    ></ion-input>
+    <ion-input type="text" fill="clear" label="Nome" labelPlacement="floating"
+      errorText="Nome inválido como seu usuário" placeholder="Digite o nome" [(ngModel)]="nome" #required></ion-input>
 
-    <ion-input 
-      type="date"
-      fill="clear"
-      label="Data de nascimento" 
-      labelPlacement="floating" 
-      errorText="Este nome será valido como seu usuário"
-      [(ngModel)]="data"
-      #required
-    ></ion-input>
+    <ion-input type="date" fill="clear" label="Data de nascimento" labelPlacement="floating"
+      errorText="Este nome será valido como seu usuário" [(ngModel)]="data" #required></ion-input>
 
-    <ion-input 
-      type="Email"
-      fill="clear"
-      label="Email"
-      labelPlacement="floating"
-      errorText="Formato de email inválido"
-      placeholder="Digite o email"
-      [(ngModel)]="email"
-      #required
-    ></ion-input>
+    <ion-input type="Email" fill="clear" label="Email" labelPlacement="floating" errorText="Formato de email inválido"
+      placeholder="Digite o email" [(ngModel)]="email" #required></ion-input>
 
-    <ion-input 
-      label="Celular" 
-      type='text' 
-      placeholder="(ddd) 000-000-000"
-      errorText="Formato de número inválido"
-      prefix="+55 "
-      mask="(00) 000-000-000"
-      [(ngModel)]="celular"
-      #required
-    ></ion-input>
+    <ion-input label="Celular" type='text' placeholder="(ddd) 000-000-000" errorText="Formato de número inválido"
+      prefix="+55 " mask="(00) 000-000-000" [(ngModel)]="celular" #required></ion-input>
 
-    <ion-input
-      type="password"
-      id="custom-input"
-      label="Senha"
-      labelPlacement="floating"
-      placeholder="Digite a senha"
-      [counter]="true"
-      maxlength="20"
-      [counterFormatter]="customCounterFormatter"
-      [(ngModel)]="senha"
-      #required
-    ></ion-input><br>
-    <ion-checkbox>Aceitar os <a href="/termos-site">termos de uso</a></ion-checkbox>
+    <ion-input type="password" id="custom-input" label="Senha" labelPlacement="floating" placeholder="Digite a senha"
+      [counter]="true" maxlength="20" [counterFormatter]="customCounterFormatter" [(ngModel)]="senha"
+      #required></ion-input><br>
+    <div id="bucets">
+      Aceitar os <ion-button id="open-toast" fill="clear" size="small" color="tertiary"> termos de uso </ion-button><ion-checkbox id="sac"></ion-checkbox>
+    </div>
   </div>
-  
+
 
   <ion-button id="conta" fill="clear" expand="block" color="tertiary" (click)="logar()">Já tenho conta</ion-button>
   <ion-button id="cadastro" expand="block" color="tertiary" (click)="cadastrar()">Cadastrar</ion-button>
-  
-</ion-content>
 
+  <ion-toast 
+    trigger="open-toast"
+    message="Este é um site para apresentação, entretando saiba que tanto a Faculdade Senac Criciúma, quanto os programadores terão acesso a suas informações."
+    [duration]="7000" icon="document-outline"></ion-toast>
+
+
+</ion-content>

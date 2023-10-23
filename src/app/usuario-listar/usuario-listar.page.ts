@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RequisicaoService } from '../service/requisicao.service';
 import { Router } from '@angular/router';
-import {  AlertController } from '@ionic/angular';
 
 /**
  * Dados de interligações do usuário-listar.
@@ -22,6 +21,17 @@ export class UsuarioListarPage implements OnInit {
    */
   public usuarios:Array<any> = [];
 
+  public alertButtons = [
+    {
+      text: 'Não',
+      role: 'cancel'
+    },
+    {
+      text: 'Sim',
+      role: 'confirm'
+    },
+  ];
+
   /** 
   * Puxa dados de outro local. 
   */
@@ -37,10 +47,7 @@ export class UsuarioListarPage implements OnInit {
      */
     public requisicao_service:RequisicaoService,
 
-    /**
-     * Variável nativa do Angular que auxilia para criar um alerta de conclusão de exclusão.
-     */
-    private alertController:AlertController
+  
   ) { }
 
   /**
@@ -92,6 +99,12 @@ export class UsuarioListarPage implements OnInit {
    */
   editar(id:number){
     this.router.navigateByUrl('/cadastro-site/' + id);
+  }
+
+  setResult(ev:any,id:number){
+    if(ev.detail.role == 'confirm'){
+      this.excluir(id);
+    }
   }
   
 }

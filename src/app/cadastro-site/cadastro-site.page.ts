@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChildren } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RequisicaoService } from '../service/requisicao.service';
 import { LoadingController } from '@ionic/angular';
@@ -16,7 +16,7 @@ import { LoadingController } from '@ionic/angular';
  * Classe do CadastroSitePage, contém os elementos para a mágica acontecer na área do cadastro e do banco de dados.
  */
 export class CadastroSitePage implements OnInit {
-
+  @ViewChildren('required') obrigatorios:any;
   /**
    * Variável que carrega o Id do usuário, seu número de registro no banco de dados.
    */
@@ -119,7 +119,7 @@ export class CadastroSitePage implements OnInit {
    * Método que ao acionar o botão de entrar pela primeira vez, cadastrando desta forma o usuário e entrando no aplicativo.
    */
   logar() {
-    this.router.navigateByUrl('/login-site');
+    this.router.navigateByUrl('/autenticacao');
   }
 
   /**
@@ -128,8 +128,8 @@ export class CadastroSitePage implements OnInit {
   async cadastrar() { //salvar()
 
     //if(this.required == '' || null){
-    //  alert('Um dos campos está incompleto.');
-    //} else{
+      //alert('Um dos campos está incompleto.');
+    //}else{
         const loading = await this.loadingController.create({
           message: 'Salvando...',
         });
@@ -153,7 +153,7 @@ export class CadastroSitePage implements OnInit {
             }
           );
         this.router.navigateByUrl('/inicio');
-    }
- // }
+    //}
+  }
 
 }
